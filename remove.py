@@ -99,5 +99,9 @@ class LinkedList:
             return self.pop_first()
         if index == self.length - 1:
             return self.pop()
+        pre = self.get(index - 1)
+        temp = pre.next_node
+        pre.next_node = temp.next_node
+        temp.next_node = None
         
         
