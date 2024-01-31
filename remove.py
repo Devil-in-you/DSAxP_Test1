@@ -103,5 +103,8 @@ class LinkedList:
         temp = pre.next_node
         pre.next_node = temp.next_node
         temp.next_node = None
-        
+        self.length -= 1
+        return temp
+    
+
         
