@@ -90,5 +90,4 @@ class LinkedList:
         new_node.next_node = temp.next_node
         temp.next_node = new_node
         self.length += 1
-
-        
+        return True
