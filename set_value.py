@@ -60,9 +60,6 @@ class LinkedList:
             temp = temp.next_node
         return temp
     def set_value(self, index, value):
-        if index < 0 or index >= self.length:
-            return None
-        temp = self.head
-        for _ in range(index):
-            temp = temp.next_node
-        temp = value
+        temp = self.get(index)
+        if temp:
+            temp.value = value
