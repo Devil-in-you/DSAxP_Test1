@@ -82,4 +82,9 @@ class DoublyLinkedList:
         return temp
     
     def set_value(self, index, value):
-        
+        temp = get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+    
