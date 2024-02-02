@@ -107,11 +107,11 @@ class DoublyLinkedList:
         return True
     
     def remove(self, index):
-        if 0 > index > self.length:
+        if 0 > index >= self.length:
             return None
         if index == 0:
             return self.pop_first()
-        if index == self.length:
+        if index == self.length - 1:
             return self.pop()
         else:
             temp = self.get(index)
