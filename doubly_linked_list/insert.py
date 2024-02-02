@@ -97,8 +97,8 @@ class DoublyLinkedList:
             return self.append(value)
         else:
             new_node = Node(value)
-            after = self.get(index + 1)
             before = self.get(index - 1)
+            after = before.next
             new_node.next = after
             new_node.prev = before
             before.next = new_node
