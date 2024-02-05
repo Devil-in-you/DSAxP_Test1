@@ -13,7 +13,7 @@ class BinerySearchTree:
         if self.root == None:
             self.root = new_node
             return True
-        temp = new_node
+        temp = self.root
         while (True):
             if new_node.value == temp.value:
                 return False
@@ -27,4 +27,3 @@ class BinerySearchTree:
                     temp.right = new_node
                     return True
                 temp = temp.right
-                
