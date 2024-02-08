@@ -7,3 +7,7 @@ class HashTable:
         for letter in key:
             my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
         return my_hash
+    
+    def print_table(self):
+        for i, val in enumerate(self.data_map):
+            print(i,": ", val)
